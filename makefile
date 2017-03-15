@@ -8,7 +8,7 @@ docker build -t yousramagdy/mysql .
 cd wordpress/
 docker build -t yousramagdy/downloader .
 
-cd phpfpm/
+cd php-fpm/
 docker build -t yousramagdy/phpfpm .
 
 cd nginx/
