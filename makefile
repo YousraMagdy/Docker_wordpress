@@ -5,16 +5,19 @@ z=`pwd`
 cd mysql/
 docker build -t yousramagdy/mysql .
 
+cd $z
 cd wordpress/
 docker build -t yousramagdy/downloader .
 
+cd $z
 cd php-fpm/
 docker build -t yousramagdy/phpfpm .
 
+cd $z
 cd nginx/
 docker build -t yousramagdy/nginx .
 
-#cd $z
+cd $z
 
 
 docker run -d  --name mysql yousramagdy/mysql
