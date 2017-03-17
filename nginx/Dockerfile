@@ -8,7 +8,7 @@ RUN apt-get update -qq && apt-get -y upgrade
 RUN apt-get -y -qq install nginx
 
 VOLUME /var/www/app
-#CMD ["nginx","-g","daemon off;"]
+
 
 # Adding the configuration files
 ADD config/nginx.conf /etc/nginx/nginx.conf
